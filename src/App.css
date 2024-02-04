@@ -1,0 +1,154 @@
+div .App {
+  background: radial-gradient(circle at center, #CBC3E3, #FFFF);
+  font-family: 'Helvetica';
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: auto;
+  flex-grow: 1;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height:100px;
+padding: 10px 20px;
+box-sizing: border-box;
+background-color:white;
+}
+
+.logo {
+font-size: 24px;
+font-weight: bold;
+color:#643B9F;
+}
+
+.profile-picture img {
+border-radius: 50%; 
+width: 50px; 
+height: 50px; 
+}
+
+.header h1 {
+text-align: left;
+margin-bottom: 20px;
+margin-left: 30px;
+margin-left:20px;
+padding-top:20px;
+width:100%;
+height:100px;
+}
+
+.tools-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+gap: 20px;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.tool-card {
+background-color: white;
+border-radius: 16px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+margin-bottom: 20px; 
+width: calc((100% - 80px) / 4); 
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.img-and-connect {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+margin-bottom: 10px;
+}
+
+.img-and-connect img {
+width: auto; 
+height: 40px; 
+}
+
+.img-and-connect button {
+padding: 5px 10px;
+cursor: pointer;
+margin-left: 10px;
+}
+
+.img-and-connect button .connected {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px; 
+  border-radius:0px;
+  }
+
+.card-title p {
+font-weight: bold;
+margin: 0;
+margin-bottom: 5px; 
+}
+
+.card-info p {
+text-align: left;
+margin: 0;
+color: #664;
+font-size: 0.8em; 
+}
+
+.navbutton1, .navbutton2 {
+font-family: 'Helvetica';
+border: 1px solid #cccccc; 
+border-radius: 4px;
+padding: 10px 20px; 
+font-size: 16px; 
+cursor: pointer; 
+transition: background-color 0.3s, color 0.3s; 
+margin-right: 10px; 
+}
+
+.navbutton1 {
+color: #080838; 
+background-color: #ffffff;
+}
+.navbutton2 {
+color: #ffff; 
+background-color: #080838;
+}
+
+.navbutton:hover {
+background-color: #f5f5f5; 
+color: #000000; 
+}
+
+.navigation {
+display: flex;
+justify-content: flex-start; 
+padding: 20px; 
+}
+
+@media (max-width: 1100px) {
+.tool-card {
+  width: calc((100% - 60px) / 3);
+}
+}
+
+@media (max-width: 900px) {
+.tool-card {
+  width: calc((100% - 40px) / 2); 
+}
+}
+
+@media (max-width: 600px) {
+.tool-card {
+  width: 100%; 
+}
+}
